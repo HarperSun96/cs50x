@@ -1,0 +1,10 @@
+DROP TABLE purchase;
+CREATE TABLE purchase (
+    id INTEGER NOT NULL,
+    type TEXT NOT NULL,
+    symbol TEXT NOT NULL,
+    name TEXT NOT NULL,
+    shares INTEGER,
+    price NUMERIC NOT NULL,
+    time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
